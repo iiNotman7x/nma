@@ -6,7 +6,7 @@
  * 
  * @author Author
  */
-public class SpiderQueenAnimation {
+public class spiderqueenanimation {
 	public static final AnimationDefinition Idle = AnimationDefinition.Builder.withLength(2.5F).looping()
 			.addAnimation("body",
 					new AnimationChannel(AnimationChannel.Targets.POSITION,

@@ -12,7 +12,7 @@ import net.minecraft.client.animation.AnimationChannel;
  * 
  * @author Author
  */
-public class SpiderQueenAnimation {
+public class spiderqueenanimation {
 	public static final AnimationDefinition Idle = AnimationDefinition.Builder.withLength(2.5F).looping()
 			.addAnimation("body",
 					new AnimationChannel(AnimationChannel.Targets.POSITION, new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),

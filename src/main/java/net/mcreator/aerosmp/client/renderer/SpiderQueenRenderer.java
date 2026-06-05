@@ -1,22 +1,25 @@
 package net.mcreator.aerosmp.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
+import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.model.geom.ModelLayers;
+import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.HierarchicalModel;
 
 import net.mcreator.aerosmp.entity.SpiderQueenEntity;
-import net.mcreator.aerosmp.client.model.animations.SpiderQueenAnimation;
-import net.mcreator.aerosmp.client.model.ModelSpiderQueen;
+import net.mcreator.aerosmp.client.model.animations.spiderqueenanimation;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 
-public class SpiderQueenRenderer extends MobRenderer<SpiderQueenEntity, ModelSpiderQueen<SpiderQueenEntity>> {
+public class SpiderQueenRenderer extends HumanoidMobRenderer<SpiderQueenEntity, HumanoidModel<SpiderQueenEntity>> {
 	private final ResourceLocation entityTexture = ResourceLocation.parse("aerosmp:textures/entities/spider_queen.png");
 
 	public SpiderQueenRenderer(EntityRendererProvider.Context context) {
-		super(context, new AnimatedModel(context.bakeLayer(ModelSpiderQueen.LAYER_LOCATION)), 2f);
+		super(context, new AnimatedModel(context.bakeLayer(ModelLayers.PLAYER)), 2f);
+		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 	}
 
 	@Override
@@ -29,7 +32,7 @@ public class SpiderQueenRenderer extends MobRenderer<SpiderQueenEntity, ModelSpi
 		return entityTexture;
 	}
 
-	private static final class AnimatedModel extends ModelSpiderQueen<SpiderQueenEntity> {
+	private static final class AnimatedModel extends HumanoidModel<SpiderQueenEntity> {
 		private final ModelPart root;
 		private final HierarchicalModel animator = new HierarchicalModel<SpiderQueenEntity>() {
 			@Override
@@ -39,8 +42,7 @@ public class SpiderQueenRenderer extends MobRenderer<SpiderQueenEntity, ModelSpi
 
 			@Override
 			public void setupAnim(SpiderQueenEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-				this.root().getAllParts().forEach(ModelPart::resetPose);
-				this.animate(entity.animationState0, SpiderQueenAnimation.Idle, ageInTicks, 1f);
+				this.animate(entity.animationState0, spiderqueenanimation.Idle, ageInTicks, 1f);
 			}
 		};
 
@@ -51,8 +53,8 @@ public class SpiderQueenRenderer extends MobRenderer<SpiderQueenEntity, ModelSpi
 
 		@Override
 		public void setupAnim(SpiderQueenEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-			animator.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
 			super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
+			animator.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
 		}
 	}
 }

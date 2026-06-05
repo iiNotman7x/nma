@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Spider Queen",
     "mobLabel": "",
-    "mobModelName": "ModelSpiderQueen",
+    "mobModelName": "Biped",
     "mobModelTexture": "spider_queen.png",
     "transparentModelCondition": {
       "fixedValue": false
@@ -25,7 +25,7 @@
     "animations": [
       {
         "animation": {
-          "value": "CUSTOM:SpiderQueenAnimation.Idle"
+          "value": "CUSTOM:spiderqueenanimation.Idle"
         },
         "speed": 1.0,
         "walking": false,

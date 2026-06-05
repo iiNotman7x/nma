@@ -8,12 +8,12 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.aerosmp.client.model.ModelSpiderQueen;
+import net.mcreator.aerosmp.client.model.modelspiderqueen;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class AerosmpModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(ModelSpiderQueen.LAYER_LOCATION, ModelSpiderQueen::createBodyLayer);
+		event.registerLayerDefinition(modelspiderqueen.LAYER_LOCATION, modelspiderqueen::createBodyLayer);
 	}
 }

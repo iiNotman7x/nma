@@ -3,14 +3,13 @@
     {
       "name": "SpiderQueen",
       "type": "livingentity",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "spider_queen",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/aerosmp/client/renderer/SpiderQueenRenderer.java",
-          "src/main/java/net/mcreator/aerosmp/entity/SpiderQueenEntity.java",
-          "src/main/resources/assets/aerosmp/items/spider_queen_spawn_egg.json"
+          "src/main/java/net/mcreator/aerosmp/entity/SpiderQueenEntity.java"
         ]
       }
     }
@@ -54,7 +53,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "neoforge-1.21.8",
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.aerosmp"
   },
   "mcreatorVersion": 202600114619

@@ -24,7 +24,7 @@ public class AerosmpModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<SpiderQueenEntity>> SPIDER_QUEEN = register("spider_queen",
 			EntityType.Builder.<SpiderQueenEntity>of(SpiderQueenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(2.5f, 1.2f));
+					.ridingOffset(-0.6f).sized(2.5f, 1.2f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
