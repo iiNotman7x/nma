@@ -1,0 +1,23 @@
+/summon aerosmp:spider_queen
+/kill @e[type= !minecraft:player]
+/summon aerosmp:spider_queen
+/kill @e[type=aerosmp:spider_queen]
+/summon aerosmp:spider_queen
+/attribute 6a04268a-dce1-408b-8666-035ebae8f537 minecraft:scale get
+/attribute 6a04268a-dce1-408b-8666-035ebae8f537 minecraft:scale base set 2
+/attribute 6a04268a-dce1-408b-8666-035ebae8f537 minecraft:scale base set 3
+/attribute 6a04268a-dce1-408b-8666-035ebae8f537 minecraft:scale base set 2.5
+/attribute 6a04268a-dce1-408b-8666-035ebae8f537 minecraft:scale base set 1
+/kill @e[type=aerosmp:spider_queen]
+/summon aerosmp:spider_queen 0 -60 0
+/kill @e[type=!minecraft:player]
+/summon aerosmp:spider_queen 0 0 0
+/kill @e[type=!minecraft:player
+/kill @e[type=!minecraft:player]
+/summon aerosmp:spider_queen 0 0 0
+/kill @e[type=!minecraft:player]
+/summon aerosmp:spider_queen 0 0 0
+/kill @e[type=!minecraft:player]
+/kill @e[type=minecraft:player]
+/kill @e[type=!minecraft:player]
+/summon aerosmp:spider_queen 0 0 0
