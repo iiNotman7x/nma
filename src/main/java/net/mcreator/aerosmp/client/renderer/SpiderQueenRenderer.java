@@ -10,7 +10,7 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.HierarchicalModel;
 
 import net.mcreator.aerosmp.entity.SpiderQueenEntity;
-import net.mcreator.aerosmp.client.model.animations.spiderqueenanimation;
+import net.mcreator.aerosmp.client.model.animations.SpiderQueenAnimation;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 
@@ -42,7 +42,7 @@ public class SpiderQueenRenderer extends HumanoidMobRenderer<SpiderQueenEntity, 
 
 			@Override
 			public void setupAnim(SpiderQueenEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-				this.animate(entity.animationState0, spiderqueenanimation.Idle, ageInTicks, 1f);
+				this.animate(entity.animationState0, SpiderQueenAnimation.Idle, ageInTicks, 1f);
 			}
 		};
 

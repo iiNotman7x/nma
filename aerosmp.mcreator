@@ -3,13 +3,65 @@
     {
       "name": "SpiderQueen",
       "type": "livingentity",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "spider_queen",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/aerosmp/client/renderer/SpiderQueenRenderer.java",
-          "src/main/java/net/mcreator/aerosmp/entity/SpiderQueenEntity.java"
+          "src/main/java/net/mcreator/aerosmp/entity/SpiderQueenEntity.java",
+          "src/main/java/net/mcreator/aerosmp/client/renderer/SpiderQueenRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "SpiderQueenEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_queen_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/aerosmp/procedures/SpiderQueenEntityIsHurtProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SpiderQueenOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_queen_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/aerosmp/procedures/SpiderQueenOnInitialEntitySpawnProcedure.java"
         ]
       }
     }
@@ -29,12 +81,12 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/aerosmp/init/AerosmpModEntities.java",
       "src/main/java/net/mcreator/aerosmp/init/AerosmpModEntityRenderers.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/aerosmp/init/AerosmpModEntities.java",
       "src/main/java/net/mcreator/aerosmp/init/AerosmpModModels.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/aerosmp/AerosmpMod.java"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/aerosmp/AerosmpMod.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {

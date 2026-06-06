@@ -4,6 +4,7 @@ import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -15,12 +16,18 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.aerosmp.procedures.SpiderQueenOnInitialEntitySpawnProcedure;
+import net.mcreator.aerosmp.procedures.SpiderQueenEntityIsHurtProcedure;
+
+import javax.annotation.Nullable;
 
 public class SpiderQueenEntity extends Monster {
 	public final AnimationState animationState0 = new AnimationState();
@@ -77,6 +84,27 @@ public class SpiderQueenEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.spider.death"));
+	}
+
+	@Override
+	public boolean hurt(DamageSource damagesource, float amount) {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		Entity sourceentity = damagesource.getEntity();
+		Entity immediatesourceentity = damagesource.getDirectEntity();
+
+		SpiderQueenEntityIsHurtProcedure.execute(world, x, y, z, entity);
+		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata) {
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
+		SpiderQueenOnInitialEntitySpawnProcedure.execute(this);
+		return retval;
 	}
 
 	@Override
