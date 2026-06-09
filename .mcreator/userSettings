@@ -1,5 +1,36 @@
 {
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
-  "workspacePanelSortAscending": true
+  "workspacePanelSortAscending": true,
+  "projectBrowserState": {
+    "expandedPaths": [
+      "[, AeroSMP]",
+      "[, AeroSMP, Resources (Gradle)]",
+      "[, AeroSMP, Resources (Gradle), C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\assets]",
+      "[, AeroSMP, Resources (Gradle), C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\assets, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\assets\\aerosmp]",
+      "[, AeroSMP, Resources (Gradle), C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\assets, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\assets\\aerosmp, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\assets\\aerosmp\\textures]",
+      "[, AeroSMP, Resources (Gradle), C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\assets, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\assets\\aerosmp, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\assets\\aerosmp\\textures, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\assets\\aerosmp\\textures\\entities]",
+      "[, AeroSMP, Resources (Gradle), C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\data]",
+      "[, AeroSMP, Resources (Gradle), C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\data, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\data\\aerosmp]",
+      "[, AeroSMP, Resources (Gradle), C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\data, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\data\\aerosmp, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\data\\aerosmp\\function]",
+      "[, AeroSMP, Resources (Gradle), C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\data, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\data\\aerosmp, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\src\\main\\resources\\data\\aerosmp\\loot_table]",
+      "[, AeroSMP, Models]",
+      "[, AeroSMP, Models, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\models\\animations]",
+      "[, AeroSMP, Models, C:\\Users\\david\\MCreatorWorkspaces\\aerosmp\\models\\mojmap-1.21.x]"
+    ]
+  },
+  "leftDockState": {
+    "expandedDock": "project_browser",
+    "dockSizes": {
+      "project_browser": 280
+    }
+  },
+  "bottomDockState": {
+    "expandedDock": "console",
+    "dockSizes": {
+      "console": 332,
+      "code_viewer": 300,
+      "debugger": 300
+    }
+  }
 }

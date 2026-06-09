@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Spider Queen",
     "mobLabel": "",
-    "mobModelName": "Biped",
+    "mobModelName": "modelspiderqueen",
     "mobModelTexture": "spider_queen.png",
     "transparentModelCondition": {
       "fixedValue": false
@@ -16,7 +16,7 @@
       "fixedValue": false
     },
     "visualScale": {
-      "fixedValue": 2.0
+      "fixedValue": 0.8
     },
     "boundingBoxScale": {
       "fixedValue": 1.5
@@ -32,8 +32,8 @@
         "amplitude": 1.0
       }
     ],
-    "modelWidth": 2.5,
-    "modelHeight": 1.2,
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
     "modelShadowSize": 2.0,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": false,
@@ -51,7 +51,7 @@
         "value": "MISC"
       }
     ],
-    "isBoss": true,
+    "isBoss": false,
     "bossBarColor": "PURPLE",
     "bossBarType": "NOTCHED_6",
     "equipmentMainHand": {

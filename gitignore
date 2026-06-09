@@ -1,0 +1,52 @@
+# MCreator generated/build files
+build/
+bin/
+out/
+run/
+
+# Gradle
+.gradle/
+gradle.log
+
+# Forge/Fabric generated files
+logs/
+crash-reports/
+saves/
+
+# Java compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# IDEs
+.idea/
+*.iml
+
+.vscode/
+.settings/
+.project
+.classpath
+
+# Eclipse
+.metadata/
+
+# NetBeans
+nbproject/private/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# MCreator caches
+.mcreator/
+cache/
+
+# Generated exports
+exports/

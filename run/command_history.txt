@@ -21,3 +21,9 @@
 /kill @e[type=minecraft:player]
 /kill @e[type=!minecraft:player]
 /summon aerosmp:spider_queen 0 0 0
+/summon aerosmp:spider_queen
+/function aerosmp:regular_spawner
+/function aerosmp:spider_queen_spawner
+/kill @e[type=!minecraft:player]
+/kill @e[type=!player]
+/kill @e[type=!minecraft:player]

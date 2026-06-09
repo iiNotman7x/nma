@@ -1,0 +1,10 @@
+{
+  "_fv": 85,
+  "_type": "loottable",
+  "definition": {
+    "type": "Block",
+    "pools": [],
+    "name": "regular_spawner_ominous",
+    "namespace": "mod"
+  }
+}
