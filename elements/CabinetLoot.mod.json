@@ -2,9 +2,9 @@
   "_fv": 85,
   "_type": "loottable",
   "definition": {
-    "type": "Block",
+    "type": "Chest",
     "pools": [],
-    "name": "blocks/blocks",
+    "name": "chests/cabinet_loot",
     "namespace": "mod"
   }
 }

@@ -2,7 +2,7 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 4,
       "entries": [
         {
           "type": "minecraft:item",
@@ -22,7 +22,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "ens_delight:raw_ender_mite_meat",
+          "name": "ends_delight:raw_ender_mite_meat",
           "weight": 6,
           "functions": [
             { "function": "minecraft:set_count", "count": { "min": 3, "max": 13 } }
@@ -70,7 +70,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "oceansdelight:guardians_tail",
+          "name": "oceansdelight:guardian_tail",
           "weight": 3,
           "functions": [
             { "function": "minecraft:set_count", "count": { "min": 3, "max": 13 } }
