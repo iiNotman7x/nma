@@ -77,11 +77,23 @@
       "name": "SpiderQueenOminousLoot",
       "type": "loottable",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "spider_queen_ominous_loot",
       "metadata": {
         "files": [
           "src/main/resources/data/nma/loot_table/spider_queen_ominous.json"
+        ]
+      }
+    },
+    {
+      "name": "CabinetLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cabinet_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/nma/loot_table/chests/cabinet_loot.json"
         ]
       }
     }
@@ -117,7 +129,7 @@
   "workspaceSettings": {
     "modid": "nma",
     "modName": "No Mans Additions",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "Notman",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
