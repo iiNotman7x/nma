@@ -96,6 +96,18 @@
           "src/main/resources/data/nma/loot_table/chests/cabinet_loot.json"
         ]
       }
+    },
+    {
+      "name": "ScatteredBarrelloot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "scattered_barrelloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/nma/loot_table/chests/scattered_barrel.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -129,7 +141,7 @@
   "workspaceSettings": {
     "modid": "nma",
     "modName": "No Mans Additions",
-    "version": "1.0.5",
+    "version": "1.0.8",
     "author": "Notman",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
