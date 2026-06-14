@@ -6,7 +6,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:netherite_ingot"
+          "name": "minecraft:netherite_ingot",
+          "weight": 1
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.7
         }
       ]
     },
@@ -16,6 +23,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:enchanted_book",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_components",
@@ -29,14 +37,11 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
+      ],
+      "conditions": [
         {
-          "type": "minecraft:item",
-          "name": "numismatics:cog"
+          "condition": "minecraft:random_chance",
+          "chance": 0.7
         }
       ]
     },
@@ -45,7 +50,44 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:silence_armor_trim_smithing_template"
+          "name": "numismatics:cog",
+          "weight": 1,
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "numismatics:cog",
+          "weight": 1,
+          ]
+        }
+      ],
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:silence_armor_trim_smithing_template",
+          "weight": 1
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.7
         }
       ]
     }
