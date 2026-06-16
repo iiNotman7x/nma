@@ -27,3 +27,6 @@
 /kill @e[type=!minecraft:player]
 /kill @e[type=!player]
 /kill @e[type=!minecraft:player]
+/function nma:give_spider_queen_spawner
+/give @s mace
+/data get entity 2c1c35f7-df4d-49fc-b9f6-f717e4b864a5

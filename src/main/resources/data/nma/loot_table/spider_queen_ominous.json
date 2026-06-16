@@ -7,21 +7,25 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:netherite_upgrade_smithing_template",
-          "weight": 1,
+          "weight": 80
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_upgrade_smithing_template",
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 3
+              "count": 2
             }
           ]
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 10
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.85
-        }
-      ]
+      "conditions": []
     },
     {
       "rolls": 1,
@@ -36,7 +40,24 @@
               "components": {
                 "minecraft:enchantments": {
                   "levels": {
-                    "minecraft:soul_speed": 3
+                    "farmersdelight:backstabbing": 2
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:swift_sneak": 3
                   }
                 }
               }
@@ -47,55 +68,71 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.85
+          "chance": 0.7
         }
       ]
     },
     {
       "rolls": 1,
       "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 10
+        },
         {
           "type": "minecraft:item",
           "name": "numismatics:cog",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
+          "weight": 70,
+          "functions": []
+        },
         {
           "type": "minecraft:item",
           "name": "numismatics:cog",
-          "weight": 1
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.55
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:silence_armor_trim_smithing_template",
-          "weight": 1,
+          "weight": 15,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": 2
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "numismatics:cog",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snout_armor_trim_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:eye_armor_trim_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rib_armor_trim_smithing_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wayfinder_armor_trim_smithing_template"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.85
+          "chance": 0.7
         }
       ]
     }

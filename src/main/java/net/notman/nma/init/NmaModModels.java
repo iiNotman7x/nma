@@ -3,7 +3,7 @@
  */
 package net.notman.nma.init;
 
-import net.notman.nma.client.model.modelspiderqueen;
+import net.notman.nma.client.model.Modelmodelspiderqueen;
 
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -14,6 +14,6 @@ import net.neoforged.api.distmarker.Dist;
 public class NmaModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(modelspiderqueen.LAYER_LOCATION, modelspiderqueen::createBodyLayer);
+		event.registerLayerDefinition(Modelmodelspiderqueen.LAYER_LOCATION, Modelmodelspiderqueen::createBodyLayer);
 	}
 }
