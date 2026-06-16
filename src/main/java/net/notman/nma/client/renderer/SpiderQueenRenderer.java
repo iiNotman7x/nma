@@ -16,7 +16,7 @@ public class SpiderQueenRenderer extends MobRenderer<SpiderQueenEntity, ModelSpi
 	private final ResourceLocation entityTexture = ResourceLocation.parse("nma:textures/entities/spider_queen.png");
 
 	public SpiderQueenRenderer(EntityRendererProvider.Context context) {
-		super(context, new AnimatedModel(context.bakeLayer(ModelSpiderQueen.LAYER_LOCATION)), 2f);
+		super(context, new AnimatedModel(context.bakeLayer(ModelSpiderQueen.LAYER_LOCATION)), 1f);
 	}
 
 	@Override

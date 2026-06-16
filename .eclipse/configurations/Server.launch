@@ -2,9 +2,9 @@
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="nma"></stringAttribute>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="net.neoforged.devlaunch.Main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" @/run/media/hbarni/hdd/random_files/git_repositories/nma/build/moddev/serverRunProgramArgs.txt"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" @/run/media/hbarni/hdd/random_files/git_repositories/nma/build/moddev/serverRunVmArgs.txt -Dfml.modFolders=mcreator%%/run/media/hbarni/hdd/random_files/git_repositories/nma/bin/main"></stringAttribute>
-    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/run/media/hbarni/hdd/random_files/git_repositories/nma/run"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value=" @C:\\Users\\david\\MCreatorWorkspaces\\nma\\build\\moddev\\serverRunProgramArgs.txt"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value=" @C:\\Users\\david\\MCreatorWorkspaces\\nma\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%C:\\Users\\david\\MCreatorWorkspaces\\nma\\bin\\main"></stringAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="C:\Users\david\MCreatorWorkspaces\nma\run"></stringAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.STOP_IN_MAIN" value="false"></booleanAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"></booleanAttribute>
 </launchConfiguration>
