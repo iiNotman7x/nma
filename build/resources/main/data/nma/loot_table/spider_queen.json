@@ -28,7 +28,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:enchantments": {
+                "minecraft:stored_enchantments": {
                   "levels": {
                     "create:capacity": 2
                   }
@@ -45,7 +45,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:enchantments": {
+                "minecraft:stored_enchantments": {
                   "levels": {
                     "minecraft:swift_sneak": 2
                   }
