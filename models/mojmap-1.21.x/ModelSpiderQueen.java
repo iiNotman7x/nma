@@ -2,7 +2,7 @@
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
-public class Modelmodelspiderqueen<T extends Entity> extends EntityModel<T> {
+public class ModelSpiderQueen<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
@@ -31,7 +31,7 @@ public class Modelmodelspiderqueen<T extends Entity> extends EntityModel<T> {
 	private final ModelPart leg8;
 	private final ModelPart leg82;
 
-	public Modelmodelspiderqueen(ModelPart root) {
+	public ModelSpiderQueen(ModelPart root) {
 		this.body = root.getChild("body");
 		this.sac = this.body.getChild("sac");
 		this.sac2 = this.sac.getChild("sac2");
@@ -154,11 +154,8 @@ public class Modelmodelspiderqueen<T extends Entity> extends EntityModel<T> {
 			float red, float green, float blue, float alpha) {
 		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
-<<<<<<<< HEAD:models/mojmap-1.21.x/Modelmodelspiderqueen.java
 
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
 			float headPitch) {
 	}
-========
->>>>>>>> f206cd6e8a51784b131128469b7adf4b9cf89904:models/mojmap-1.21.x/modelspiderqueen.java
 }

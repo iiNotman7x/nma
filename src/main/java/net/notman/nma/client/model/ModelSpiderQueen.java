@@ -18,10 +18,10 @@ import com.mojang.blaze3d.vertex.PoseStack;
 // Made with Blockbench 5.1.4
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
-public class Modelmodelspiderqueen<T extends Entity> extends EntityModel<T> {
+public class ModelSpiderQueen<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("nma", "modelmodelspiderqueen"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("nma", "model_spider_queen"), "main");
 	public final ModelPart body;
 	public final ModelPart sac;
 	public final ModelPart sac2;
@@ -46,7 +46,7 @@ public class Modelmodelspiderqueen<T extends Entity> extends EntityModel<T> {
 	public final ModelPart leg8;
 	public final ModelPart leg82;
 
-	public Modelmodelspiderqueen(ModelPart root) {
+	public ModelSpiderQueen(ModelPart root) {
 		this.body = root.getChild("body");
 		this.sac = this.body.getChild("sac");
 		this.sac2 = this.sac.getChild("sac2");

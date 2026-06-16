@@ -1,8 +1,8 @@
 package net.notman.nma.client.renderer;
 
 import net.notman.nma.entity.SpiderQueenEntity;
-import net.notman.nma.client.model.animations.Animationsspiderqueenanimation;
-import net.notman.nma.client.model.Modelmodelspiderqueen;
+import net.notman.nma.client.model.animations.SpiderQueenAnimation;
+import net.notman.nma.client.model.ModelSpiderQueen;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.entity.MobRenderer;
@@ -12,11 +12,11 @@ import net.minecraft.client.model.HierarchicalModel;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 
-public class SpiderQueenRenderer extends MobRenderer<SpiderQueenEntity, Modelmodelspiderqueen<SpiderQueenEntity>> {
+public class SpiderQueenRenderer extends MobRenderer<SpiderQueenEntity, ModelSpiderQueen<SpiderQueenEntity>> {
 	private final ResourceLocation entityTexture = ResourceLocation.parse("nma:textures/entities/spider_queen.png");
 
 	public SpiderQueenRenderer(EntityRendererProvider.Context context) {
-		super(context, new AnimatedModel(context.bakeLayer(Modelmodelspiderqueen.LAYER_LOCATION)), 2f);
+		super(context, new AnimatedModel(context.bakeLayer(ModelSpiderQueen.LAYER_LOCATION)), 2f);
 	}
 
 	@Override
@@ -29,7 +29,7 @@ public class SpiderQueenRenderer extends MobRenderer<SpiderQueenEntity, Modelmod
 		return entityTexture;
 	}
 
-	private static final class AnimatedModel extends Modelmodelspiderqueen<SpiderQueenEntity> {
+	private static final class AnimatedModel extends ModelSpiderQueen<SpiderQueenEntity> {
 		private final ModelPart root;
 		private final HierarchicalModel animator = new HierarchicalModel<SpiderQueenEntity>() {
 			@Override
@@ -40,7 +40,7 @@ public class SpiderQueenRenderer extends MobRenderer<SpiderQueenEntity, Modelmod
 			@Override
 			public void setupAnim(SpiderQueenEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 				this.root().getAllParts().forEach(ModelPart::resetPose);
-				this.animate(entity.animationState0, Animationsspiderqueenanimation.Idle, ageInTicks, 1f);
+				this.animate(entity.animationState0, SpiderQueenAnimation.Idle, ageInTicks, 1f);
 			}
 		};
 
