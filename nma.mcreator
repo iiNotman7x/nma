@@ -41,7 +41,7 @@
       "name": "RegularSpawnerLoot",
       "type": "loottable",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "regular_spawner_loot",
       "metadata": {
         "files": [
@@ -53,7 +53,7 @@
       "name": "RegularSpawnerOminousLoot",
       "type": "loottable",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "regular_spawner_ominous_loot",
       "metadata": {
         "files": [
@@ -182,12 +182,12 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/notman/nma/init/NmaModEntityRenderers.java",
       "src/main/java/net/notman/nma/init/NmaModEntities.java",
-      "src/main/java/net/notman/nma/NmaMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/notman/nma/init/NmaModEntityRenderers.java",
       "src/main/java/net/notman/nma/init/NmaModModels.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/net/notman/nma/NmaMod.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
